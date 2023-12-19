@@ -3,6 +3,7 @@ body {
   background-color: rgb(155, 239, 156);
 }
 h1 {
+    text-align: center;
   background-color: yellow;
 }
 
@@ -13,11 +14,12 @@ label {
   width: 20%;
 }
 labelbutton {
-    font-size: 20pt;
+    margin-top: 15px;
+    font-size: 15pt;
     display: block;
     float: left;
     text-align: right;
-    width: 30%;
+    width: 40%;
 }
 
 input {
@@ -38,18 +40,32 @@ input {
   color: white;
   background-color: blue;
 }
+.btn2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 16pt;
+  height: 4ex;
+  width: 3em;
+  border-radius: 10px;
+  color: white;
+  background-color: rgba(144, 0, 255, 0.799);
+}
 
 #message {
   border-style: solid;
   border-color: grey;
+  text-align: center;
+
 }
 
 table {
   border-collapse: collapse;
+  text-align: center;
 }
 
 th, td {
   border: solid;
+   
 }
 
 td.num {

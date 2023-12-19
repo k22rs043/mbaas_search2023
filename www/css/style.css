@@ -12,6 +12,13 @@ label {
   text-align: right;
   width: 20%;
 }
+labelbutton {
+    font-size: 20pt;
+    display: block;
+    float: left;
+    text-align: right;
+    width: 30%;
+}
 
 input {
   width: 75%;

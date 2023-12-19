@@ -72,6 +72,8 @@
             })
         }
 
+        
+
         function showResults(results) {
             // テーブルのヘッダを生成
             let msg = "<table><tr><th>Country</th><th>Population</th><th>area</th></tr>";
@@ -107,13 +109,16 @@
         <button class="btn" onclick="fetchAll()">Fetch All</button>
         <button class="btn" onclick="searchCountry()">Country</button>
         <br>
-        <button class="btn" onclick="searchPopulationLT()">Population &lt;</button>
-        
-        <button class="btn" onclick="searchPopulationGT()">Population &gt;</button>
+        <labelbutton for="Population">人口:</labelbutton>
+        <button class="btn" onclick="searchPopulationLT()"> &lt;</button>
+
+        <button class="btn" onclick="searchPopulationGT()"> &gt;</button>
         <br>
-        <button class="btn" onclick="searchareaLT()">area &lt;</button>
+        <labelbutton for="Population">面積:</labelbutton>
+        <button class="btn" onclick="searchareaLT()"> &lt;</button>
+
+        <button class="btn" onclick="searchareaGT()"> &gt;</button>
         
-        <button class="btn" onclick="searchareaGT()">area &gt;</button>
 
     </div>
     <div id="message">message area</div>

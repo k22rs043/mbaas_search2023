@@ -76,7 +76,7 @@
 
         function showResults(results) {
             // テーブルのヘッダを生成
-            let msg = "<table><tr><th>Country</th><th>Population</th><th>area</th></tr>";
+            let msg = "<table><tr><th>国名</th><th>人口(億)</th><th>面積</th></tr>";
             for (let i = 0; i < results.length; i++) {
                 // 各データを収めた表の列を生成
                 msg += "<tr>";
@@ -97,7 +97,8 @@
     <h1>mBaaS search</h1>
     <div>
         <label for="Country">Country:</label>
-        <input id="Country" type="text" placeholder="Country">
+        <input id="Country" type="search" placeholder="Country">
+       
     </div>
     <div>
         <label for="Population">Population:</label>
@@ -107,7 +108,8 @@
     </div>
     <div id="button">
         <button class="btn" onclick="fetchAll()">Fetch All</button>
-        <button class="btn" onclick="searchCountry()">Country</button>
+        <button class="btn" onclick="searchCountry()">国検索</button>
+        
         <br>
         <labelbutton for="Population">人口【億人】:</labelbutton>
         <button class="btn2" onclick="searchPopulationLT()"> &lt;</button>

@@ -40,7 +40,9 @@
             })
         }
 
+        
         function searchPopulationLT() {
+            
             let Population = parseInt($("#Population").val());
             let TestDataClass = ncmb.DataStore(db);
             TestDataClass.lessThan("Population", Population).fetchAll().then(function(results) {
@@ -108,7 +110,7 @@
     </div>
     <div id="button">
         <button class="btn" onclick="fetchAll()">Fetch All</button>
-        <button class="btn" onclick="searchCountry()">国検索</button>
+        <button class="btn" onclick="searchCountry()">国名検索</button>
         
         <br>
         <labelbutton for="Population">人口【億人】:</labelbutton>
